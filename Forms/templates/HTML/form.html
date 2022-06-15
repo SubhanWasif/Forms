@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <form method = POST action="">
+    {% csrf_token %}
+    <div class="field" tabindex="1">
+      <label for="username">
+        <i class="far fa-user"></i>Name
+      </label>
+      {{form.name}}
+    </div>
+    <div class="field" tabindex="2">
+      <label for="email">
+        <i class="far fa-envelope"></i>Email
+      </label>
+      {{form.email}}
+    </div>
+    <div class="field" tabindex="3">
+      <label for="message">
+        <i class="far fa-edit"></i>Message
+      </label>
+      {{form.message}}
+    </div>
+    <div class="field" tabindex="3">
+      <label for="message">
+        <i class="far fa-edit"></i>Number
+      </label>
+      {{form.number}}
+    </div>
+    <div class="field" tabindex="3">
+      <label for="message">
+        <i class="far fa-edit"></i>address
+      </label>
+      {{form.address}}
+    </div>
+    <div class="field" tabindex="3">
+      <label for="message">
+        <i class="far fa-edit"></i>City
+      </label>
+      {{form.City}}
+    </div>
+    <div class="field" tabindex="3">
+      <label for="message">
+        <i class="far fa-edit"></i>country
+      </label>
+      {{form.country}}
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit">
+    
+  </form>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
